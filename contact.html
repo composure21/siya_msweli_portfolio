@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- CONTACT -->
+  <section class="contact-page">
+    <div class="container contact-grid">
+
+      <!-- Left -->
+      <div class="contact-info fade-left">
+        <span class="badge">Contact Me</span>
+        <h1>
+          Let's build <span>something amazing.</span>
+        </h1>
+        <p>
+          Whether you have a project, internship opportunity,
+          freelance work, or simply want to connect,
+          I'd love to hear from you.
+        </p>
+      </div>
+
+      <!-- Right -->
+      <div class="contact-card fade-right">
+        <h2>Get In Touch</h2>
+
+        <div class="contact-details">
+
+          <!-- Email -->
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:Simisimsweli8@icloud.com">Simisimsweli8@icloud.com</a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+27768444981">+27 76 844 4981</a>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/siya-msweli25"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                linkedin.com/in/siya-msweli25
+              </a>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/composure21"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                github.com/composure21
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERSECTION OBSERVER -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll(".fade-up, .fade-left, .fade-right")
+      .forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
