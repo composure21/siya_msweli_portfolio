@@ -386,7 +386,6 @@ section {
     }
 
 /* Contact */
-/* Contact */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -438,7 +437,7 @@ section {
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.18);
         font-size: 1.2rem;
-        color: #f8fafc;
+        color: #fff;
     }
 
     .contact-item h4 {
