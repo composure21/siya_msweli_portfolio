@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- PROJECTS -->
+  <section class="projects container">
+
+    <div class="section-title fade-up">
+      <h1>Featured Projects</h1>
+      <p>
+        Explore some of my full-stack development projects built with
+        C#, ASP.NET Core MVC, PostgreSQL, HTML, CSS, and JavaScript.
+      </p>
+    </div>
+
+    <div class="project-grid">
+
+      <!-- BizTrack -->
+      <div class="project-card fade-up">
+        <img src="images/BizTrack_pic.png" alt="BizTrack Project Screenshot">
+        <div class="content">
+          <h3>BizTrack</h3>
+          <p>Expense Tracking Application built using ASP.NET Core MVC and PostgreSQL.</p>
+          <a href="https://github.com/composure21/BizTrack"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="github-btn">
+            <i class="fab fa-github"></i>
+            <span>View on GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- iPhoneHub -->
+      <div class="project-card fade-up">
+        <img src="images/iPhoneHub_pic.png" alt="iPhoneHub Project Screenshot">
+        <div class="content">
+          <h3>iPhoneHub</h3>
+          <p>Modern ASP.NET Core MVC e-commerce website for buying second-hand iPhones.</p>
+          <a href="https://github.com/composure21/iPhoneHub"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="github-btn">
+            <i class="fab fa-github"></i>
+            <span>View on GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Booking System -->
+      <div class="project-card fade-up">
+        <img src="images/TOB_pic.png" alt="Booking System Project Screenshot">
+        <div class="content">
+          <h3>Booking System</h3>
+          <p>Online booking system for a Biokineticist using ASP.NET Core MVC.</p>
+          <a href="https://github.com/composure21/trinaoreebookingsystem"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="github-btn">
+            <i class="fab fa-github"></i>
+            <span>View on GitHub</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERSECTION OBSERVER -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll(".fade-up, .fade-left, .fade-right")
+      .forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
