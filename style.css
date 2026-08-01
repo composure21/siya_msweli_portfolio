@@ -340,11 +340,11 @@ section {
     }
 
 .github-btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 255px;
+    width: 300px;
     height: 40px;
     padding: 12px 22px;
     margin-top: 20px;
