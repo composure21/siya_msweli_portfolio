@@ -67,6 +67,6 @@ Portfolio/
 ├── images/
 │
 ├── files/
-│   └── Siyabonga J Msweli CV (2026).pdf
+│   └── Siyabonga J Msweli CV.pdf
 │
 └── README.md
